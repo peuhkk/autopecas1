@@ -30,6 +30,5 @@ public class Main {
         System.out.println("Valor da peca: "+ valorPeca);
         System.out.println("ID da Peça: " + idPeca);
         System.out.println("Estoque atualizado: "+ quantidadeAdd);
-
     }
 }
