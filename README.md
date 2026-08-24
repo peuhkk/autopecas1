@@ -1,136 +1,179 @@
-# 📦 StockFlow
+# 📦 Sistema de Estoque
 
-Sistema de gerenciamento de estoque desenvolvido em **Java**, criado do zero com o objetivo de praticar e aplicar conceitos de desenvolvimento de software, orientação a objetos, organização de código e gerenciamento de dados.
+Sistema de gerenciamento de estoque desenvolvido **do zero em Java**, como projeto de portfólio e prática de desenvolvimento.
 
-O projeto será construído de forma incremental, utilizando versões para registrar a evolução e as novas funcionalidades implementadas.
+O projeto começou com uma aplicação simples em console e será evoluído gradualmente, adicionando novas funcionalidades e aplicando conceitos de programação conforme o desenvolvimento avança.
 
-## 🚀 Sobre o projeto
+> 🚧 **Status:** Em desenvolvimento
+> 📌 **Versão atual:** `0.1.0`
 
-O **StockFlow** tem como objetivo fornecer uma solução simples e organizada para gerenciamento de estoque.
+---
 
-A ideia é começar com uma aplicação básica e evoluí-la gradualmente, adicionando novas funcionalidades conforme o desenvolvimento avança.
+## 🎯 Sobre o projeto
 
-Entre as funcionalidades planejadas estão:
+A ideia deste projeto é criar um sistema de estoque funcional utilizando Java, começando pelos conceitos básicos e evoluindo a aplicação ao longo do desenvolvimento.
 
-* Cadastro de produtos
-* Edição de produtos
-* Exclusão de produtos
-* Consulta de produtos
-* Controle de quantidade em estoque
-* Entrada de produtos
-* Saída de produtos
-* Alertas de estoque baixo
-* Controle de categorias
-* Pesquisa e filtros
-* Relatórios
-* Persistência de dados
-* Controle de usuários
-* Histórico de movimentações
+Nesta primeira etapa, o sistema permite realizar o cadastro inicial de uma peça informando:
+
+* Nome da peça
+* Quantidade em estoque
+* Valor da peça
+* Identificação (ID)
+
+Após o cadastro, as informações são exibidas no console.
+
+O projeto será desenvolvido de forma incremental, utilizando versões para registrar sua evolução.
+
+---
 
 ## 🛠️ Tecnologias
 
-* Java
-* Maven
-* Git
-* GitHub
+Atualmente, o projeto utiliza:
 
-Novas tecnologias poderão ser adicionadas conforme a evolução do projeto.
+* **Java**
+* **Scanner**
+* **Locale**
+* **Git**
 
-## 📂 Estrutura do projeto
+Novas tecnologias e conceitos serão adicionados conforme o projeto evoluir.
 
-A estrutura poderá evoluir durante o desenvolvimento. A proposta inicial é:
+---
 
-```text
-StockFlow/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── ...
-│   └── test/
-│       └── java/
-├── .gitignore
-├── pom.xml
-└── README.md
-```
+## ✨ Funcionalidades atuais
+
+### Cadastro de peça
+
+* [x] Informar nome da peça
+* [x] Informar quantidade
+* [x] Informar valor
+* [x] Informar identificação
+* [x] Exibir informações cadastradas
+
+### Próximas funcionalidades
+
+* [ ] Menu de opções
+* [ ] Cadastro de múltiplas peças
+* [ ] Consulta de peças
+* [ ] Atualização de peças
+* [ ] Remoção de peças
+* [ ] Entrada de estoque
+* [ ] Saída de estoque
+* [ ] Validação dos dados
+* [ ] Organização do código em classes
+* [ ] Persistência dos dados
+* [ ] Banco de dados
+* [ ] Interface gráfica ou web
+
+---
 
 ## 📌 Versionamento
 
-O projeto utiliza versionamento para acompanhar sua evolução.
+O projeto utiliza versões para acompanhar sua evolução.
 
-### v0.1.0 — Estrutura inicial
+### `0.1.0` — Primeiro protótipo
 
-Primeira versão do projeto.
+Primeira versão funcional do sistema.
 
 * Criação do projeto Java
-* Configuração inicial do Maven
-* Estrutura inicial de diretórios
-* Criação das primeiras classes
-* Definição da entidade Produto
-* Implementação inicial do controle de estoque
+* Implementação da aplicação em console
+* Cadastro de uma peça
+* Entrada de nome, quantidade, valor e ID
+* Exibição dos dados cadastrados
+* Utilização de `Scanner` para entrada de dados
+* Configuração de `Locale.US` para valores numéricos
 
 ### Próximas versões
 
-**v0.2.0**
+As próximas versões serão definidas conforme novas funcionalidades forem implementadas.
 
-* Cadastro de produtos
-* Listagem de produtos
-* Edição de produtos
-* Exclusão de produtos
+---
 
-**v0.3.0**
+## 🗺️ Roadmap
 
-* Entrada e saída de estoque
-* Validação de quantidade
-* Controle de estoque mínimo
-
-**v0.4.0**
-
-* Persistência de dados
-* Banco de dados
-* Repository/DAO
-
-**v0.5.0**
-
-* Sistema de usuários
-* Login
-* Permissões
-
-**v1.0.0**
-
-* Primeira versão estável
-* Sistema completo de gerenciamento de estoque
-
-## 🎯 Objetivos
-
-O projeto tem como principais objetivos:
-
-* Praticar Java
-* Aplicar Programação Orientada a Objetos
-* Desenvolver um projeto do zero
-* Aprender a estruturar aplicações
-* Utilizar Git e GitHub de forma organizada
-* Trabalhar com versionamento
-* Aprender persistência de dados
-* Desenvolver uma aplicação de estoque funcional
-
-## 📈 Roadmap
+### 🟢 Etapa 1 — Fundamentos
 
 * [x] Criar projeto
-* [x] Configurar ambiente
-* [ ] Criar entidade Produto
-* [ ] Implementar cadastro
-* [ ] Implementar consulta
-* [ ] Implementar edição
-* [ ] Implementar exclusão
-* [ ] Implementar entrada de estoque
-* [ ] Implementar saída de estoque
-* [ ] Implementar estoque mínimo
-* [ ] Adicionar banco de dados
-* [ ] Criar sistema de usuários
-* [ ] Criar relatórios
-* [ ] Criar testes automatizados
-* [ ] Publicar versão 1.0.0
+* [x] Entrada de dados
+* [x] Cadastro básico
+* [x] Exibição dos dados
+* [ ] Criar menu principal
+* [ ] Trabalhar com estruturas condicionais
+* [ ] Trabalhar com estruturas de repetição
 
-## 📜 Licença
+### 🟡 Etapa 2 — Organização
 
-Este projeto está em desenvolvimento para fins de estudo e prática de desenvolvimento de software.
+* [ ] Criar classes
+* [ ] Criar objetos
+* [ ] Separar responsabilidades
+* [ ] Criar métodos
+* [ ] Trabalhar com listas de produtos
+
+### 🟠 Etapa 3 — Sistema de estoque
+
+* [ ] Cadastro de produtos
+* [ ] Consulta de produtos
+* [ ] Edição de produtos
+* [ ] Remoção de produtos
+* [ ] Entrada de estoque
+* [ ] Saída de estoque
+
+### 🔵 Etapa 4 — Evolução
+
+* [ ] Salvar dados
+* [ ] Banco de dados
+* [ ] Tratamento de exceções
+* [ ] Testes
+* [ ] Melhorias na arquitetura
+
+---
+
+## 📚 Conceitos estudados
+
+Conforme o projeto evolui, novos conceitos de Java serão aplicados na prática.
+
+Atualmente:
+
+* Variáveis
+* Tipos primitivos
+* `String`
+* Entrada de dados com `Scanner`
+* Saída de dados com `System.out`
+* Conversão e leitura de valores
+* `Locale`
+* Estrutura básica de uma aplicação Java
+
+---
+
+## 🚀 Como executar
+
+Atualmente, basta ter o **Java JDK** instalado.
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/sistema-estoque.git
+```
+
+Entre na pasta:
+
+```bash
+cd sistema-estoque
+```
+
+Compile e execute a classe `Main`.
+
+---
+
+## 📈 Evolução do projeto
+
+Este projeto está sendo desenvolvido **do zero**, começando com conceitos básicos de Java e evoluindo gradualmente para uma aplicação de estoque mais completa.
+
+A intenção é manter o histórico do desenvolvimento para demonstrar não apenas o resultado final, mas também a evolução das funcionalidades, organização do código e conhecimentos aplicados ao longo do projeto.
+
+---
+
+## 👨‍💻 Autor
+
+**Seu Nome**
+
+Projeto desenvolvido para fins de **portfólio, prática e evolução em desenvolvimento Java**.
