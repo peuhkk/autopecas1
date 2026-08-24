@@ -9,6 +9,5 @@ public class Main {
         System.out.println("║     SISTEMA DE ESTOQUE       ║");
         System.out.println("╠══════════════════════════════╣");
 
-
     }
 }
