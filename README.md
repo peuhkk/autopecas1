@@ -51,7 +51,7 @@ Novas tecnologias e conceitos serão adicionados conforme o projeto evoluir.
 
 ### Próximas funcionalidades
 
-* [ ] Menu de opções
+* [ ] program.Menu de opções
 * [ ] Cadastro de múltiplas peças
 * [ ] Consulta de peças
 * [ ] Atualização de peças
