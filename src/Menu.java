@@ -14,6 +14,7 @@ public class Menu {
         int[] idPeca = new int[100];
 
         String escolha = "1";
+        int busca = 0;
 
        while(escolha.equals("1")) {
             System.out.println("╔══════════════════════════════╗");
@@ -22,16 +23,39 @@ public class Menu {
             System.out.println("║                              ║");
             System.out.println("║  1 -      Menu               ║");
             System.out.println("║  2 -      Cadastro           ║");
-            System.out.println("║  3 -      Sair               ║");
+            System.out.println("║  3 -      Buscar             ║");
+            System.out.println("║  4 -      Sair               ║");
             System.out.println("║                              ║");
             System.out.println("╚══════════════════════════════╝");
 
             escolha = sc.next();
-            if (escolha.equals("3")){
-                break;
-            }
             sc.nextLine();
 
+            if (escolha.equals("4")){
+                break;
+            }
+
+            if (escolha.equals("3")){
+                while (escolha.equals("3")){
+                        System.out.println("Digite o id da peça que deseja buscar: ");
+                        busca = sc.nextInt();
+                        sc.nextLine();
+                        for (int i = 0;!escolha.equals("1") ; i++){
+                        if (busca == idPeca[i]){
+                            System.out.println("ID: "+ idPeca[i]);
+                            System.out.println("Nome da peça: "+ nomePeca[i]);
+                            System.out.println("Valor da peça: "+ valorPeca[i]);
+                            System.out.println("");
+                            System.out.println("Para voltar, digite 1");
+                            escolha = sc.nextLine();
+                        } else {
+                            System.out.println("Peça não encontrada, ou não foi cadastrada!");
+                            escolha = "1";
+                        }
+
+                    }
+                }
+            }
 
             if (escolha.equals("2")) {
                 for (int i = 0; escolha.equals("2"); i++) {
