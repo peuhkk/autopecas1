@@ -8,7 +8,7 @@ public class Menu {
 
         Scanner sc = new Scanner(System.in);
 
-        Produto p = new Produto();
+        Produto[] p = new Produto[100];
 
         String escolha = "menu";
         int busca = 0;
@@ -34,13 +34,13 @@ public class Menu {
                     System.out.println("╚══════════════════════════════╝");
 
                     System.out.print("Nome da peça: ");
-                    p.nome[i] = sc.nextLine();
+                    p[i].nome = sc.nextLine();
                     System.out.print("Quantidade à adicionar ao estoque: ");
-                    p.estoque[i] = sc.nextInt();
+                    p[i].addNoEstoque(sc.nextInt());
                     System.out.print("Valor da peça: ");
-                    p.preco[i] = sc.nextDouble();
+                    p[i].preco = sc.nextDouble();
                     System.out.print("Identificação: ");
-                    p.id[i] = sc.nextInt();
+                    p[i].id = sc.nextInt();
                     sc.nextLine();
 
                     System.out.println("╔═══════════════════════════════╗");
@@ -49,10 +49,10 @@ public class Menu {
                     System.out.println("");
                     System.out.println("====== Informações da peça ======");
                     System.out.println("");
-                    System.out.println("Nome: " + p.nome[i]);
-                    System.out.printf("Valor da peca: R$ %.2f%n", p.preco[i]);
-                    System.out.println("ID da Peça: " + p.id[i]);
-                    System.out.println("Estoque atualizado: " + p.estoque[i] +" "+ p.nome[i]);
+                    System.out.println("Nome: " + p[i].nome);
+                    System.out.printf("Valor da peca: R$ %.2f%n", p[i].preco);
+                    System.out.println("ID da Peça: " + p[i].id);
+                    System.out.println("Estoque atualizado: " + p[i].estoque +" "+ p[i].nome);
                     System.out.println("");
                     System.out.println("=================================");
                     System.out.println("| 1 - Voltar ao menu | 2 - Cadastrar outra peça |");
@@ -66,10 +66,10 @@ public class Menu {
                 System.out.println("DIgite o id: ");
                 busca = sc.nextInt();
                 sc.nextLine();
-                    if (busca == p.id[i]) {
-                        System.out.println("Nome da peça: " + p.nome[i]);
-                        System.out.printf("Valor da peça: R$ %.2f%n", p.preco[i]);
-                        System.out.println("Quantidade em estoque: " + p.estoque[i]);
+                    if (busca == p[i].id) {
+                        System.out.println("Nome da peça: " + p[i].nome);
+                        System.out.printf("Valor da peça: R$ %.2f%n", p[i].preco);
+                        System.out.println("Quantidade em estoque: " + p[i].estoque);
                         System.out.println("");
                         System.out.println("Digite menu para voltar ao menu: ");
                         System.out.println("Digite 3 para buscar novamente: ");
