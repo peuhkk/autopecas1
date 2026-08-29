@@ -1,3 +1,6 @@
+//INÍCIO DO PROJETO!
+// v0.01
+
 import java.util.Scanner;
 import java.util.Locale;
 
